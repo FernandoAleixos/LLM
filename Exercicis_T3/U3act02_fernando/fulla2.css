@@ -1,0 +1,30 @@
+
+body{
+    background-color: #c6e0ec;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    background-color: #4099bf;
+}
+
+h3{
+    background-color: #79b8d2;
+    color: white;
+}
+
+pre{
+    text-align: left;
+    background-color: white;
+}
+
+#primer{
+    padding-left: 20px;
+}
+
+#segon{
+    text-align: right;
+}

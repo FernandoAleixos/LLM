@@ -1,0 +1,25 @@
+h1 {
+    counter-reset: compta-paragrafs;
+    counter-reset: compta-apartats;
+    
+}
+
+h2 {
+    counter-reset: compta-paragrafs;
+    
+}
+
+h2::before {
+    content: counter(compta-apartats,
+    upper-alpha)". ";
+    counter-increment: compta-apartats;
+}
+
+p::before {
+    content: counter(compta-apartats,
+ 
+    upper-alpha)"-"counter(compte-
+    parrafos)". ";
+    
+    counter-increment: compta-paragrafs;
+}
