@@ -1,25 +1,27 @@
 h1 {
-    counter-reset: compta-paragrafs;
-    counter-reset: compta-apartats;
-    
+    counter-reset: contador1;
 }
 
 h2 {
-    counter-reset: compta-paragrafs;
-    
+    counter-reset: contador2;
 }
 
 h2::before {
-    content: counter(compta-apartats,
-    upper-alpha)". ";
-    counter-increment: compta-apartats;
+    content: counter(contador1, upper-alpha)". ";
+    counter-increment: contador1;
+}
+
+h3 {
+    counter-reset: contador3;
+}
+
+h3::before {
+    content: counter(contador2, upper-alpha)". ";
+    counter-increment: contador2;
+    
 }
 
 p::before {
-    content: counter(compta-apartats,
- 
-    upper-alpha)"-"counter(compte-
-    parrafos)". ";
-    
-    counter-increment: compta-paragrafs;
+    content: counter(contador2, upper-alpha)"-" counter(contador3)". ";
+    counter-increment: contador3;
 }
