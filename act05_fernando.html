@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="act05_fernando.css">
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <img src="hero.png" alt="hero">
+    <h1>Currículum Vitae de Atanagildo Aguirre Pacheco</h1>
+
+    <p>Este es un ejemplo de currículum vitae. Cualquier parecido con la realidad es pura coincidencia.</p>
+
+        <h2>Datos personales</h2>
+        
+        <div>
+            <table>
+                <form action="GET">
+                    <tr>
+                        <td>
+                            <label for="nom">Nom:</label>
+                            <input type="text" placeholder="Nom..." name="nom" maxlength="20" required>
+                        </td>
+                    </tr>
+                    <tr>  
+                        <td>
+                            <label for="primer_cognom">Cognoms:</label>
+                            <input type="text" placeholder="Primer Cognom..." name="primer_cognom" maxlength="20" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="data_naixemet">Data de naixement:</label>
+                            <input type="date" value="2000-01-01" name="data">
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="adresa">Adreça:</label>
+                            <input type="text" placeholder="Adreça..." name="adresa" maxlength="50" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="correu">Correu electrònic:</label>
+                            <input type="email" placeholder="Correu..." name="correu" pattern="\d[a-z]#" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Enviar les dades">
+                            <input type="reset" value="Borrar les dades">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        
+        <h2>Educacióon y Formación</h2>
+        <span></span>
+        
+</body>
+
+</html>
