@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=JetBrains+Mono:wght@300&display=swap');
+
+@font-face {
+    font-family: "jetbrains_mono";
+    src: url(jetbrains_mono.woff2);
+}
+
+body {
+  background-color: bisque;
+}
+
+p {
+  font-family: "jetbrains_mono", sans-serif;
+}
