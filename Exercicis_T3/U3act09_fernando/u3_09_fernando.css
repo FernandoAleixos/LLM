@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  font-size: larger;
+}
+
+h1 {
+  border: black 3px solid;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 2px hidden;
+  text-align: justify;
+}
+
+p.a {
+  border-left: red 15px double;
+  border-top: red 15px double;
+}
+
+p.b {
+  border-top: blue 5px dashed;
+  border-right: green 8px dashed;
+  border-bottom: blue 10px dashed;
+  border-left: green 10px solid;
+}
+
+p.c {
+  border-top: yellow 15px double;
+  border-right: yellow 15px double;
+  
+}
