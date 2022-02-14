@@ -10,8 +10,7 @@ h1 {
 }
 
 p {
-  margin-bottom: 2px hidden;
-  text-align: justify;
+  
 }
 
 p.a {
@@ -28,6 +27,7 @@ p.b {
 
 p.c {
   border-top: yellow 15px double;
-  border-right: yellow 15px double;
-  
+  border-right: yellow 5px double;
+  border-bottom: yellow 15px double;
+  border-left: yellow 5px double;
 }
