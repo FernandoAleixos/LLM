@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@font-face {
+  font-family: 'Segoe UI', sans-serif;
+  src: url(shizuru-regular.ttf);
+}
+body {
+  text-transform: uppercase;
+  font-style: initial;
+  color: white;
+  background-color: #474747;
+  padding: 30px 60px;
+  border-left: white 10px solid;
+  border-top: white 30px solid;
+  border-bottom: white 10px solid;
+  border-right: white 10px solid;
+}
+
+h1 {
+  color: chocolate;
+  padding: 5px 10px;
+  font-size: 35px;
+  counter-reset: cont1;
+}
+
+h2 {
+  border-bottom: white 3px solid;
+}
+
+h2::before {
+  content: counter(cont1, decimal)". ";
+  counter-increment: cont1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border: white 2px solid;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  vertical-align: middle;
+  width: 110px;
+  float: right;
+}
+
+li:hover {
+  background-color: chocolate;
+  font-size: 1.5rem;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 20%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.pico, .escalonado, .campana {
+  width: 15%;
+  height: 15;
+  border: white 2px solid;
+  padding: 10px 10px;
+  float: right;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 30px;
+}
+
+
+.flecha {
+  width: 40px;
+  height: 40px;
+  border: white 2px solid;
+  float: right;
+  margin-top: 40px;
+  margin-left: 15px;
+  padding: 1px 1px;
+}
+
+.flecha:hover {
+  background-color: chocolate;
+}
+
+
+
+
+
+
