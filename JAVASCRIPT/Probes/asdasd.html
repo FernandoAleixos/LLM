@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 1;
+        console.log(a); // Aquí accedemos a la "a" global, que vale 1
+
+        function x() {
+            console.log(a); // En esta línea el valor de "a" es 1
+            a = 5; // Aquí modificamos la variable "a" en el ámbito anterior
+
+            console.log(a); // Aquí el valor de "a" es 5 (a nivel de función)
+            console.log(window.a); // Aquí el valor de "a" es 5 (ámbito global)
+        }
+
+        x(); // Aquí se ejecuta el código de la función x()
+        console.log(a); // En esta línea el valor de "a" es 5
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
