@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7</title>
+</head>
+<body>
+    <script>
+        function letraDni() {
+            let caracter = "TRWAGMYFPDXBNJZSQVHLCKE";
+            let resto = dni % 23;
+            return caracter.charAt(resto);
+        }
+
+        var dni = prompt("Introduce tu DNI sin la letra: ");
+
+        do {
+            if(dni < 0 || dni > 99999999 || Number(dni) != dni) {
+                alert("DNI incorrecto!");
+            } else {
+                alert("La letra de tu DNI es: " + letraDni(dni));
+            }
+        } while();
+    </script>
+</body>
+</html>
