@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad1 = prompt("Introduce ahora tu edad: ");
+        edad1 = Number.parseInt(edad1);
+        let edad2 = prompt("Introduce ahora otra edad: ");
+        edad2 = Number.parseInt(edad2);
+        let edad3 = prompt("Introduce una última edad: ");
+        edad3 = Number.parseInt(edad3);
+
+        let nom1 = prompt("Introduce un nombre: ");
+        let nom2 = prompt("Introduce otro nombre: ");
+        let nom3 = prompt("Introduce un último nombre: ");
+        
+
+        let maximo = Math.max(edad1, edad2, edad3);
+        
+        if (maximo == edad1) {
+            document.write("El de edad mayor es: " + nom1);
+        } 
+        if (maximo == edad2) {
+            document.write("El de edad mayor es: " + nom2);
+        } 
+        if (maximo == edad3) {
+            document.write("El de edad mayor es: " + nom3);
+        }
+    </script>
+</body>
+</html>

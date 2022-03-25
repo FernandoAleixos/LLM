@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var condicion = true;
+
+        do {
+            let aleatori1 = Math.floor((Math.random() * 10) + 1);
+            let aleatori2 = Math.floor((Math.random() * 10) + 1);    
+            let aleatori3 = Math.floor((Math.random() * 10) + 1);
+        
+            if (aleatori1 != aleatori2 && aleatori1 != aleatori3 && aleatori2 != aleatori3) {
+                document.write(aleatori1 + " ");
+                document.write(aleatori2 + " ");
+                document.write(aleatori3 + " ");
+                condicion = false;
+            }
+        } while (condicion);
+        
+        
+    </script>
+</body>
+</html>
