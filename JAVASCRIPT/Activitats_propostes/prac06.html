@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do {
+            var numero1 = prompt("Introduce un número: ");
+            var numero2 = prompt("Introduce otro número: ");
+            var num1 = Number(numero1);
+            var num2 = Number(numero2);
+
+            if ( num1 == numero1 && num2 == numero2) {
+                var suma = (num1 + num2);
+            } else {
+                alert("ERROR!! El carácter introducido no es válido.");
+            }
+        } while(confirm("¿Deseas continuar?"));
+
+        document.write(suma);
+    </script>
+</body>
+</html>
