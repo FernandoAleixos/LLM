@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="menu.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var menu = "Menú Calculadora\n" +
+            "================\n" +
+            "1. Suma.\n" +
+            "2. Resta.\n" +
+            "3. Multiplicació.\n" +
+            "4. Divisió.\n" +
+            "5. Eixir.\n\n" +
+            "Tria una opció:";
+
+        var opcio;
+        var historic = "";
+        var i = 1;
+
+        do {
+            opcio = parseInt(prompt(menu));
+            var num1, num2;
+
+            if ((opcio >= 1) && (opcio <= 4)){
+              num1 = parseInt(prompt("Introdueïx un nombre: "));
+              num2 = parseInt(prompt("Introdueïx altre nombre: "));
+            }
+            switch (opcio) {
+                case 1: //Suma
+                    historic += i + `) Suma de ${num1} i ${num2} <br/>`;
+                    alert(suma(num1,num2));
+                    break;
+
+                case 2: //Resta
+                    historic += i + " Resta<br/>";
+                    alert(resta(num1, num2));
+                    break;
+
+                case 3: //Multiplicació
+                    historic += i + " Multiplicació<br/>";
+                    alert(multiplicacio(num1, num2));
+                    break;
+
+                case 4: //Divisió
+                    historic += i + " Divisió<br/>";
+                    alert(divisio(num1, num2));
+                    break;
+
+                case 5:
+                    break;
+
+                default:
+                    alert("No has introduït una opció correcta.");
+            }
+            i++;
+        } while (opcio != 5);
+
+
+        document.write(historic);
+    </script>
+</body>
+
+</html>
