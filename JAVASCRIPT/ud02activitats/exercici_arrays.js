@@ -12,3 +12,7 @@ function carregaExemple() {
         document.getElementById("text");
     }
 }
+
+function ordenar() {
+    
+}
