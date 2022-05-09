@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac16</title>
+</head>
+
+<body>
+    <script>
+        var cadena = prompt("Introduce una cadena que contenga paréntesis: ");
+        var numchar;
+        var caracter;
+        var salida = "";
+        var existe = false;
+
+        for (let j = 0; j < cadena.length; j++) {
+            caracter = cadena.charAt(j);
+            if (caracter == ")") {
+                existe = false;
+            }
+            if (copiar) {
+                salida += caracter;
+            }
+            if (caracter == "(") {
+                existe = true;
+            }
+        }
+        document.write(salida);
+    </script>
+</body>
+
+</html>
