@@ -1,0 +1,40 @@
+{
+    "equipo": "JavaEnjoyers.P.C",
+    "color": "Naranja",
+    "estadio": "Catadaw",
+    "entrenador": "Francesc Tapia",
+    "historico": true,
+    "web": "https://portal.edu.gva.es/iesmestreramonesteve/es/centro/",
+    "jugadores": {
+        "base": [
+            {
+            "nombre": "Cristian Martinez",
+            "dorsal": 9
+            }
+        ],
+        "escolta": [
+            {
+            "nombre": "Victor Marco",
+            "dorsal": 15
+            }
+        ],
+        "alero": [ 
+            {
+            "nombre": "Carlos Bocarando",
+            "dorsal": 99
+            }
+        ],
+        "alaPivot": [
+            {
+            "nombre": "Fernando Aleixos",
+            "dorsal": 77
+            } 
+        ],
+        "pivot": [
+            {
+            "nombre": "Vicent Campos",
+            "dorsal": 23
+            }
+        ]
+    }   
+}
