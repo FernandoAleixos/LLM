@@ -1,0 +1,44 @@
+[
+    {
+        "nombre" : "Paco",
+        "fechaNacimiento" : "09/08/1480",
+        "lugarNacimiento" : "Extremadura",
+        "fechaDefuncion" : "08/08/1570",
+        "lugarDefuncion" : "Picassent",
+        "obras" : [
+            {
+            "titulo" : "Un cuadro muy bonito",
+            "anyoCreacion" : 1504,
+            "url" : "https://portal.edu.gva.es/iesmestreramonesteve/es/centro/"
+            }
+        ]
+    },
+    {
+        "nombre" : "Paco",
+        "fechaNacimiento" : "09/08/1480",
+        "lugarNacimiento" : "Extremadura",
+        "fechaDefuncion" : "08/08/1570",
+        "lugarDefuncion" : "Picassent",
+        "obras" : [
+            {
+            "titulo" : "Un cuadro muy bonito",
+            "anyoCreacion" : 1504,
+            "url" : "https://portal.edu.gva.es/iesmestreramonesteve/es/centro/"
+            }
+        ]
+    },
+    {
+        "nombre" : "Paco",
+        "fechaNacimiento" : "09/08/1480",
+        "lugarNacimiento" : "Extremadura",
+        "fechaDefuncion" : "08/08/1570",
+        "lugarDefuncion" : "Picassent",
+        "obras" : [
+            {
+            "titulo" : "Un cuadro muy bonito",
+            "anyoCreacion" : 1504,
+            "url" : "https://portal.edu.gva.es/iesmestreramonesteve/es/centro/"
+            }
+        ]
+    }
+]
