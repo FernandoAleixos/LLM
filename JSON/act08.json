@@ -1,0 +1,138 @@
+{
+    "contenedores": [
+        {
+            "tipo": "grande",
+            "tamanyo": [
+                {
+                    "grande": [
+                        {
+                            "tipo": "grandeAncho",
+                            "liquido" : [
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Agua"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Leche"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Aceite"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Vinagre"
+                                }
+                            ]
+                        },
+                        {
+                            "tipo": "grandeAlto",
+                            "liquido": [
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Agua"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Leche"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Aceite"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Vinagre"
+                                }
+                            ]
+                        }
+                    ],
+                    "mediano": [
+                        {
+                            "tipo": "medianoAncho",
+                            "liquido": [
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Agua"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Leche"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Aceite"
+                                },
+                                {
+                                    "tipo": "alimenticio",
+                                    "producto": "Vinagre"
+                                }
+                            ]
+                        },
+                        {
+                            "tipo":"medianoAlto",
+                            "liquido": [
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Lejía"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Amoniaco"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Jabón"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Aguarrás"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Gasolina"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Alcohol"
+                                }
+                            ]
+                        }
+                    ],
+                    "pequenyo" : [
+                        {
+                            "tipo": "pequenyo",
+                            "liquido": [
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Lejía"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Amoniaco"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Jabón"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Aguarrás"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Gasolina"
+                                },
+                                {
+                                    "tipo": "corrosivo",
+                                    "producto": "Alcohol"
+                                }
+                            ]
+                        }
+                    ] 
+                }
+            ]
+        }
+    ]
+}
