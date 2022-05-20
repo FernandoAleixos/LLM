@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <ol id="users"></ol>
     <script>
-        var libro = {
-            escritor: "J.K.Rowling",
-            titulo : "Jarry Potter",
-            genero : "Ciencia Ficción"
-        };
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then((data) => data.json())
+            .then((users) => {
+                let output = "";
 
-        var objetoJSON = JSON.stringify(libro);
+                for (let i = 0; i < users.length; i++) {
+                    output += `<details>
+                            <summary>${users[i].name}</summary>
+                            nickname: ${users[i].username}</br>
+                            email: ${users[i].email}</br>
+                            address: ${users[i].address.street}</br>
+                                suite: ${users[i].address.suite}</br>
+                                city: ${users[i].address.city}</br>
+                                zipcode: ${users[i].address.zipcode}</br>
+                                geo: ${users[i].address.geo}</br>
+                                    lat: ${users[i].address.geo.lat}</br>
+                                    lng: ${users[i].address.geo.lng}
+                        </details>`;
+                }
 
-        console.log("LIBRO");
-        console.log(libro);
-
-        console.log("OBJETO JSON");
-        console.log(objetoJSON);
+                document.getElementById("users").innerHTML = output;
+            });
     </script>
 </body>
+
 </html>
