@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    
+    <label for="users">Usuaris: </label>
+    <select name="lista" id="users">
+        <button onclick="">enviar</button>
+    </select>
+
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/users")
+          .then( response => response.json())
+          .then( data => {
+            let salida = "";
+       
+            for (let i = 0; i < data.length; i++) {
+              salida += `<option>${data[i].name}</option>`;
+            }
+       
+            document.getElementById("users").innerHTML = salida;
+          });
+    </script>
+</body>
+</html>

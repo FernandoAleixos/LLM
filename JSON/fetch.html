@@ -11,12 +11,12 @@
 <body>
     <ol id="users"></ol>
     <script>
-        fetch("https://jsonplaceholder.typicode.com/users")
+        fetch("https://jsonplaceholder.typicode.com/posts")
             .then((data) => data.json())
             .then((users) => {
                 let output = "";
 
-                for (let i = 0; i < users.length; i++) {
+                /*for (let i = 0; i < users.length; i++) {
                     output += `<details>
                             <summary>${users[i].name}</summary>
                             nickname: ${users[i].username}</br>
@@ -25,11 +25,16 @@
                                 suite: ${users[i].address.suite}</br>
                                 city: ${users[i].address.city}</br>
                                 zipcode: ${users[i].address.zipcode}</br>
-                                geo: ${users[i].address.geo}</br>
                                     lat: ${users[i].address.geo.lat}</br>
                                     lng: ${users[i].address.geo.lng}
                         </details>`;
-                }
+                }*/
+                // for (let i = 0; i < users.length; i++) {
+                //     output += `<details>
+                //         <summary>${posts[i].id}</summary>
+                        
+                //         </details>';
+                // }
 
                 document.getElementById("users").innerHTML = output;
             });
