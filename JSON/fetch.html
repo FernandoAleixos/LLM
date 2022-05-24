@@ -29,12 +29,12 @@
                                     lng: ${users[i].address.geo.lng}
                         </details>`;
                 }*/
-                // for (let i = 0; i < users.length; i++) {
-                //     output += `<details>
-                //         <summary>${posts[i].id}</summary>
+                for (let i = 0; i < users.length; i++) {
+                    output += `<details>
+                        <summary>${posts[i].id}</summary>
                         
-                //         </details>';
-                // }
+                        </details>';
+                }
 
                 document.getElementById("users").innerHTML = output;
             });
