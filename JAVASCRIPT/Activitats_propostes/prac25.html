@@ -8,14 +8,31 @@
 </head>
 <body>
     <script>
-        const array = [10];
-        
-        do {
-            var min = parseInt(prompt("Introduce el número mínimo: "));
-            var max = parseInt(prompt("Introduce el número máximo: "));
+        //Realitza un script que emplene un array de 10 números aleatoris que estiguen entre un
+        //número mínim i un número màxim (que hauràs de demanar per pantalla). Mostra-ho per la consola.
+        //També, després, que demane per pantalla tres números i els inserte en la quarta posició
+        //(recorda que els arrays comencen per zero!). Mostra aquest nou array per consola.
 
-        } while(min >= max);
-        
+        var array = [];
+        var numero = 0;
+        var numero2 = 0;
+        var numero3 = 0;
+        var numero4 = 0;
+
+        for (var i = 0; i < 10; i++) {
+            numero = Math.floor(Math.random() * (10 - 1) + 1);
+            array.push(numero);
+        }
+
+        console.log(array);
+
+        numero2 = parseInt(prompt("Introdueix un número"));
+        numero3 = parseInt(prompt("Introdueix un número"));
+        numero4 = parseInt(prompt("Introdueix un número"));
+
+        array.splice(3, 0, numero2, numero3, numero4);
+
+        console.log(array);
     </script>    
 </body>
 </html>

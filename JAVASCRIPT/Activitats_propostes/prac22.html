@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac22</title>
+</head>
+<body>
+    <script>
+        //Realitza un script que escriga el números de l'1 fins al 500, 
+        //que indique quins són múltiples de 4 i de 9i que cada 5 línies escrigui una línia horitzontal:
+        var i = 1;
+        var cont = 0;
+
+        while (i <= 500) {
+            if (cont == 5) {
+                document.write("<hr>");
+                cont = 0;
+            } else if (i % 4 == 0) {
+                document.write(i + "(Múltiplo de 4)<br>");
+            } else if (i % 9 == 0) {
+                document.write(i + "(Múltiplo de 9)<br>");
+            } else{
+                document.write(i + "<br>");
+            }
+            i++;
+            cont++;
+        }
+    </script>
+</body>
+</html>

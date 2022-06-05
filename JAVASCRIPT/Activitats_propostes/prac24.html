@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Realitza un script que demane el nom i cognoms de l’usuari i que mostre per pàgina un
+        //correu electrònic amb aquesta nomenclatura:
+
+        //primeralletradelnom.primercognomsegoncognom@prova.es
+        
+        //Per exemple: si el nom és Carmen i els cognoms Martínez Sala el correu electrònic serà
+        //c.martinezsala@prova.es
+        //Amb compte quan es posen majúscules i minúscules i els accents.
+        var nom = prompt("Introdueix el teu nom:");
+        var cognom1 = prompt("Introdueix el teu primer cognom:");
+        var cognom2 = prompt("Introdueix el teu segon cognom:");
+
+        var correu = nom.charAt(0).toLowerCase().trim() + cognom1.charAt(0).toLowerCase().trim() + cognom2.charAt(0).toLowerCase().trim() + "@prova.es";
+        document.write(correu);
+    </script>
+</body>
+</html>
