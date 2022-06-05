@@ -26,6 +26,6 @@ function llistarNombres() {
     var nombresOrdenados = arrayNombres.sort;
     
     for (let i = 0; i < arrayNombres.length; i++) {
-        todos = 
+        document.write(todos += `<li> ${nombresOrdenados[i]} </li>`);
     }
 }
