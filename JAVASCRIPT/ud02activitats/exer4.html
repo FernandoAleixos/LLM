@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 4</title>
+</head>
+
+<body>
+    <script>
+        // Genera un array de números aleatoris (el número d'elements, el mínim i el màxim els passaràs per uns prompt), ordena'ls i mostra'ls en una llista desordenada.
+        var numElements = parseInt(prompt("Introdueix el número d'elements que vols que tingui l'array:"));
+        var min = parseInt(prompt("Introdueix el mínim que vols que tingui l'array:"));
+        var max = parseInt(prompt("Introdueix el màxim que vols que tingui l'array:"));100
+        var array = [numElements];
+
+        function imprimirArray(array) {
+            for (var i = 0; i < array.length; i++) {
+                document.write(`<li> ${array[i]} </li>`);
+            }
+        }
+        
+        for (var i = 0; i < array.length; i++) {
+            array[i] = Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        imprimirArray(array);
+
+        array.sort();
+
+        imprimirArray(array);
+
+    </script>
+</body>
+
+</html>
